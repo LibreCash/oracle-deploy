@@ -1,5 +1,5 @@
 [Unit]
-Description=Go Ethereum
+Description=Librebank UI
 
 [Service]
 ExecStart=cd ~/src/lightnode/ && npm start

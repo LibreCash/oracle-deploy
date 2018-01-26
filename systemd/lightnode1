@@ -1,5 +1,5 @@
 [Unit]
-Description=Go Ethereum
+Description=Librebank Lightnode 0
 
 [Service]
 ExecStart=cd ~/src/lightnode/ && node cli/lightnode-cli.js --section lightnode1 --config ../config/config1.json
