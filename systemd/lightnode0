@@ -1,0 +1,11 @@
+[Unit]
+Description=Go Ethereum
+
+[Service]
+ExecStart=cd ~/src/lightnode/ && node cli/lightnode-cli.js --section lightnode0 --config ../config/config1.json
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=always
+
+[Install]
+Alias=libre-lightnode0.service

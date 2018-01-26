@@ -1,0 +1,12 @@
+[Unit]
+Description=Go Ethereum
+
+[Service]
+ExecStart=cd ~/src/lightnode/ && npm start
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=always
+
+[Install]
+Alias=libre-ui.service
+

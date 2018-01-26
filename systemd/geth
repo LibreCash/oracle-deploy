@@ -1,0 +1,11 @@
+[Unit]
+Description=Go Ethereum
+
+[Service]
+ExecStart=/root/geth --rinkeby --ws --wsaddr "0.0.0.0" --wsapi "admin,debug,miner,shh,txpool,personal,eth,net,web3"  --wsorigins="*" console
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=always
+
+[Install]
+Alias=geth-rinkeby.service
