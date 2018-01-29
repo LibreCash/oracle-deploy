@@ -6,7 +6,3 @@ GITKEYREMOTE=$3 # ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
 sshpass -f $PASSFILE scp $GITKEYLOCAL $HOST:$GITKEYREMOTE
 sshpass -f $PASSFILE scp $GITKEYLOCAL.pub $HOST:$GITKEYREMOTE.pub
 sshpass -f $PASSFILE ssh $HOST "chmod go-rw $KEYREMOTE $KEYREMOTE.pub"
-
-#sshpass -f ../../private/pass-m-1 scp readonly $KEY:~/.ssh/id_rsa
-#sshpass -f ../../private/pass-m-1 scp readonly.pub $M0:~/.ssh/id_rsa.pub
-#sshpass -f ../../private/pass-m-1 ssh $M0 'chmod go-rw ~/.ssh/id_rsa*'
