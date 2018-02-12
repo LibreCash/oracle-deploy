@@ -1,4 +1,4 @@
-
+#!/bin/sh
 git_clone_light () {
 	git clone $REPO_LIGHTNODE
 }

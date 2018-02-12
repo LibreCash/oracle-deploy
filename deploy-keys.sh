@@ -1,3 +1,4 @@
+#!/bin/sh
 HOST=$0         # $M0
 PASSFILE=$1     # ../../private/pass-m-1
 GITKEYLOCAL=$2  # readonly readonly.pub

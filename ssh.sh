@@ -1,3 +1,4 @@
+#!/bin/sh
 CONFIG=$1
 
 . $CONFIG

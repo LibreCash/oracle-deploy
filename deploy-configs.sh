@@ -1,3 +1,4 @@
+#!/bin/sh
 HOST=$0         # $M0
 PASSFILE=$1     # ../../private/pass-m-1
 CONFIGNODE=$2   # ../../private/common-config.json
